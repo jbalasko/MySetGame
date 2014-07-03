@@ -1,10 +1,14 @@
 
 
 package setgame;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics;
 
 import javax.swing.*;        
  
-public class MehrMalUebungen extends JFrame{
+public class MehrMalUebungen extends JToggleButton{
 
     public void paint(Graphics g) {
     Dimension d = this.getPreferredSize();
@@ -14,7 +18,7 @@ public class MehrMalUebungen extends JFrame{
      
     g.setColor(Color.red);
     
-    g.drawString("www.java2s.com", 10, 20);
+    g.drawString("test", 10, 20);
   }
     
     
