@@ -47,7 +47,6 @@ public class Gui {
         final JPanel pDeck = GuiMakeMethods.panelMaker(game, 50, 50, 250, 250, new GridLayout(5, 3));
 
         final JToggleButton[] tbDeck = GuiMakeMethods.toggleButtonArrayMaker(pDeck, 15, 0, 0, 0, 100, 30);
-    //final test[] tbDeck = GuiMakeMethods.toggleButtonArrayMaker(pDeck, 15, 0, 0, 0, 100, 30);
 
         //GUI Elements, PlayerPanel ------------------------------------------------------------------------------
         final JPanel outputPanel = GuiMakeMethods.panelMaker(game, 360, 50, 300, 240, new GridLayout(2, 3));
