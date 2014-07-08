@@ -50,7 +50,7 @@ public class Gui {
 
         //GUI Elements, PlayerPanel ------------------------------------------------------------------------------
         final JPanel outputPanel = GuiMakeMethods.panelMaker(game, 360, 50, 300, 240, new GridLayout(2, 3));
-    //Border myBorder = outputPanel.getBorder();
+        //Border myBorder = outputPanel.getBorder();
         //Border margin = new LineBorder(Color.BLACK,2);
         //outputPanel.setBorder(new CompoundBorder(myBorder, margin));
 
