@@ -152,4 +152,14 @@ public class GuiMakeMethods{
 		}
 		return pArray;
 	}
+        
+        public static DG_MyButton[] myButtonMaker(Container parent, int count, int displacement, int posX, int posY, int width, int height) {
+            DG_MyButton[] myButtonArray = new DG_MyButton[count];
+		for (int i = 0; i < count; i++) {
+			myButtonArray[i] = new DG_MyButton();
+			myButtonArray[i].setBounds(posX, posY + (displacement + height) * i, width, height);
+			parent.add(myButtonArray[i]);
+		}
+            return myButtonArray;
+        }
 }

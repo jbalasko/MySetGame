@@ -46,7 +46,8 @@ public class Gui {
         final JFrame game = GuiMakeMethods.frameMaker("Set Card Game", 400, 20, 700, 400, false, true, null);
         final JPanel pDeck = GuiMakeMethods.panelMaker(game, 50, 50, 250, 250, new GridLayout(5, 3));
 
-        final JToggleButton[] tbDeck = GuiMakeMethods.toggleButtonArrayMaker(pDeck, 15, 0, 0, 0, 100, 30);
+        //final JToggleButton[] tbDeck = GuiMakeMethods.toggleButtonArrayMaker(pDeck, 15, 0, 0, 0, 100, 30);
+        final DG_MyButton[] MyDeck = GuiMakeMethods.myButtonMaker(pDeck, 15, 0, 0, 0, 100, 30);
 
         //GUI Elements, PlayerPanel ------------------------------------------------------------------------------
         final JPanel outputPanel = GuiMakeMethods.panelMaker(game, 360, 50, 300, 240, new GridLayout(2, 3));
@@ -92,17 +93,17 @@ public class Gui {
                     game.setVisible(true);
                 }
 
-                if (e.getSource().getClass().getName().equals("javax.swing.JToggleButton")) {
+                if (e.getSource().getClass().getName().equals("DG_MyButton.java")) {     //javax.swing.JToggleButton
                     if (((AbstractButton) e.getSource()).isSelected() == true) {
-                        setCountFunc((JToggleButton) e.getSource());
+                        setCountFunc((DG_MyButton) e.getSource());                  //JToggleButton
                     }
                 }
             }
         };
         cbPlayerCount.addActionListener(al);
         btnStart.addActionListener(al);
-        for (int i = 0; i < tbDeck.length; i++) {
-            tbDeck[i].addActionListener(al);
+        for (int i = 0; i < MyDeck.length; i++) {   //tbDeck
+            MyDeck[i].addActionListener(al);        //tbDeck
         }
         d1.repaint();
 
