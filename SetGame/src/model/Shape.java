@@ -11,7 +11,7 @@ package model;
  * @author Dominik
  */
 public enum Shape {
-    HEART, STAR, WAVE;
+    HEART, STAR, WAVE; //Contains every possible Shape from which the user can choose
     
     
     

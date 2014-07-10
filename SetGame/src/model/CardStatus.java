@@ -11,5 +11,5 @@ package model;
  * @author Dominik
  */
 public enum CardStatus {
-    INSTACK, ONTABLE, CONSUMED 
+    INSTACK, ONTABLE, CONSUMED  //Contains every possible Status
 }

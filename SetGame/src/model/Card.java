@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package model;
 
 /**
@@ -11,21 +10,22 @@ package model;
  * @author Dominik
  */
 public class Card {
+
     // optical attributes of a card
     private CardColor color;
     private Filling filling;
     private Shape shape;
     private int shapeAmount;
-    
+
     // logical attributes
     private CardStatus cardStatus;
-    
+
     public Card(CardColor color, Filling filling, Shape shape, int shapeAmount) {
         this.color = color;
         this.filling = filling;
         this.shape = shape;
         this.shapeAmount = shapeAmount;
-        this.cardStatus = CardStatus.INSTACK;
+        this.cardStatus = CardStatus.INSTACK; //after creating every card is in the stack
     }
 
     public CardColor getColor() {
@@ -52,7 +52,5 @@ public class Card {
     public void setCardStatus(CardStatus cardStatus) {
         this.cardStatus = cardStatus;
     }
-    
-    
-    
+
 }

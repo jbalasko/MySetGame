@@ -11,7 +11,7 @@ package model;
  * @author Dominik
  */
 public enum CardColor {
-    RED, BLUE, GREEN, BLACK;
+    RED, BLUE, GREEN, BLACK; //Contains every possible Color from which the user can choose
     
     
     @Override

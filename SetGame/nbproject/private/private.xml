@@ -5,6 +5,9 @@
         <group>
             <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/CardColor.java</file>
             <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/gui/Gui.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/CardStack.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/Card.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/functional/CardFactory.java</file>
         </group>
     </open-files>
 </project-private>

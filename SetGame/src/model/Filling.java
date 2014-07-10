@@ -11,7 +11,7 @@ package model;
  * @author Dominik
  */
 public enum Filling {
-    OPEN, STRIPED, SOLID; 
+    OPEN, STRIPED, SOLID;  //Contains every possible Filling
     
    
 }
