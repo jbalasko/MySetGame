@@ -28,6 +28,7 @@ import model.Card;
 import model.CardColor;
 import model.CardStack;
 import model.Filling;
+import model.Shape;
 
 /**
  *
@@ -160,9 +161,18 @@ public class Gui {
     
     public void createCardsInGame() {
         CardStack cardStack = new CardStack();
+        //
         cardStack.addFilling(Filling.OPEN);
+        cardStack.addFilling(Filling.STRIPED);
         cardStack.addFilling(Filling.SOLID);
+        
         cardStack.addColor(CardColor.RED);
+        cardStack.addColor(CardColor.BLACK);
+        cardStack.addColor(CardColor.GREEN);
+        
+        cardStack.addShape(Shape.HEART);
+        cardStack.addShape(Shape.WAVE);
+        cardStack.addShape(Shape.STAR);
         
         cardStack.createCards();
         

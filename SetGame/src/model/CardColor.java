@@ -11,7 +11,7 @@ package model;
  * @author Dominik
  */
 public enum CardColor {
-    RED, BLUE, GREEN;
+    RED, BLUE, GREEN, BLACK;
     
     
     @Override
