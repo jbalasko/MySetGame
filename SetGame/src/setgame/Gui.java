@@ -93,7 +93,7 @@ public class Gui {
                     game.setVisible(true);
                 }
 
-                if (e.getSource().getClass().getName().equals("DG_MyButton.java")) {     //javax.swing.JToggleButton
+                if (e.getSource().getClass().getName().equals("DG_MyButton")) {     //javax.swing.JToggleButton
                     if (((AbstractButton) e.getSource()).isSelected() == true) {
                         setCountFunc((DG_MyButton) e.getSource());                  //JToggleButton
                     }
