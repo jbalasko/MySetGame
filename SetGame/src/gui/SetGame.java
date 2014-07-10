@@ -1,4 +1,4 @@
-package setgame;
+package gui;
 
 public class SetGame {
 
@@ -6,6 +6,8 @@ public class SetGame {
         Gui myGui = new Gui();
         myGui.initGui();
     }
+    
+    
 }
 
 

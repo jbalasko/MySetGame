@@ -1,4 +1,4 @@
-package setgame;
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,6 +25,9 @@ public class DG_MyButton extends JToggleButton {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        //drawCard();
+        
+        
         //drawEmptyWave(g, 3, Color.red);
         //drawShadeWave(g, 3, Color.black);
         //drawFilledWave(g, 3, Color.black);

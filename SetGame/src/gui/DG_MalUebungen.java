@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package setgame;
+package gui;
 
 import javax.swing.SwingUtilities;
 import javax.swing.JFrame;

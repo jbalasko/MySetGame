@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package setgame;
+package gui;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -11,6 +11,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.AbstractButton;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -23,6 +24,10 @@ import javax.swing.JToggleButton;
 import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.LineBorder;
+import model.Card;
+import model.CardColor;
+import model.CardStack;
+import model.Filling;
 
 /**
  *
@@ -30,9 +35,9 @@ import javax.swing.border.LineBorder;
  */
 public class Gui {
 
-    static int setCount = 0;
-    static int maxPlayers = 6;
-    static String[] playerNames;
+    private static final int setCount = 0;
+    private static final int maxPlayers = 6;
+    private static String[] playerNames;
 
     public void initGui() {
 
@@ -135,7 +140,7 @@ public class Gui {
         }
     }
 
-    static void setCountFunc(JToggleButton jtbutton) {
+    private static void setCountFunc(DG_MyButton jtbutton) {
         int count = 0;
         Component[] siblings = jtbutton.getParent().getComponents();
         for (int i = 0; i < siblings.length; i++) {
@@ -150,5 +155,16 @@ public class Gui {
             }
         }
 
+    }
+    
+    
+    public void createCardsInGame() {
+        CardStack cardStack = new CardStack();
+        cardStack.addFilling(Filling.OPEN);
+        cardStack.addFilling(Filling.SOLID);
+        cardStack.addColor(CardColor.RED);
+        
+        cardStack.createCards();
+        
     }
 }

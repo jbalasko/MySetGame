@@ -1,5 +1,5 @@
 
-package setgame;
+package gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
