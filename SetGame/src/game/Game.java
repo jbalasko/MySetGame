@@ -19,13 +19,13 @@ public class Game implements Serializable{
     private static Game instance = null;
     private static Settings settings;
     //array of players for this game
-    private final LinkedHashSet<Player> players;
+    private final Set<Player> players;
     //deck of cards for this game
-    private ArrayList<SetCard> cardDeck;
+    private List<SetCard> cardDeck;
     //cards on the game table
-    private ArrayList<SetCard> cardTable;
+    private List<SetCard> cardTable;
     //set candidate
-    private ArrayList<SetCard> cardSet;
+    private List<SetCard> cardSet;
     
     /** creates the first and only instance of <code>Game</code>
      * and initialize all fields
@@ -83,7 +83,7 @@ public class Game implements Serializable{
             }
         }
     }
-    private void shuffle(ArrayList<SetCard> cardDeck){
+    private void shuffle(List<?> cardDeck){
         //todo 
     }
     /** deals a new <code>SetCard</code> from cardDeck into cardTable

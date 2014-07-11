@@ -21,9 +21,9 @@ import exceptions.*;
  */
 public class Settings implements Serializable{
     private static Settings instance;
-    private static LinkedHashSet<Player> players;
-    private static LinkedHashSet<Symbol> symbols;
-    private static LinkedHashSet<Color> colors;
+    private static Set<Player> players;
+    private static Set<Symbol> symbols;
+    private static Set<Color> colors;
     private static Color singleColor;
     
     /** *  creates <code>Settings</code> instance with default values:
@@ -71,7 +71,7 @@ public class Settings implements Serializable{
         if (s!=null) players.add(new Player(s));
         else throw new SettingsException("Player name not set - NULL Pointer!");
     }
-    public static void addAllPlayers(LinkedHashSet<Player> p)
+    public static void addAllPlayers(Set<Player> p)
             throws SettingsException{
         if (p!= null && p.size() >= 1) {
             players.clear();
@@ -84,7 +84,7 @@ public class Settings implements Serializable{
      * 
      * @return <code>LinkedHashSet<E></code> players field
      */
-    public static LinkedHashSet<Player> getPlayers(){
+    public static Set<Player> getPlayers(){
         return players;
     }
     /** registers symbols for game instance
@@ -93,7 +93,7 @@ public class Settings implements Serializable{
      * with 3 elements/symbols
      * @throws SettingsException
      */
-    public static void setSymbols (LinkedHashSet<Symbol> a) 
+    public static void setSymbols (Set<Symbol> a) 
             throws SettingsException{
         if (a.size()==3) {
             symbols.clear();
@@ -105,7 +105,7 @@ public class Settings implements Serializable{
      * 
      * @return <code>LinkedHashSet<E></code> symbols field
      */
-    public static LinkedHashSet<Symbol> getSymbols(){
+    public static Set<Symbol> getSymbols(){
         return symbols;
     }
     /** registers colors for game instance
@@ -114,7 +114,7 @@ public class Settings implements Serializable{
      * with 3 elements/colors
      * @throws SettingsException
      */
-    public static void setColors (LinkedHashSet<Color> c) 
+    public static void setColors (Set<Color> c) 
             throws SettingsException{
         if (c.size()==3) {
             colors.clear();
@@ -126,7 +126,7 @@ public class Settings implements Serializable{
      * 
      * @return <code>LinkedHashSet<E></code> colors field
      */
-    public static LinkedHashSet<Color> getColors(){
+    public static Set<Color> getColors(){
         return colors;
     }
     /** registers single color for game instance and allows simplified game
