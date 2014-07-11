@@ -27,11 +27,11 @@ public class Settings implements Serializable{
     private static Color singleColor;
     
     /** *  creates <code>Settings</code> instance with default values:
-     * <b>
- players: Player 1, Player 2
- symbols: Rectangle, Wave, Oval
- colors: Red, Green, Blue
- singleColor: null
+     * <br>
+     * players: Player 1, Player 2
+     * symbols: Rectangle, Wave, Oval
+     * colors: Red, Green, Blue
+     * singleColor: null
      */ 
     protected Settings(){
         players = new LinkedHashSet<>();
@@ -55,7 +55,7 @@ public class Settings implements Serializable{
         if (instance == null) instance = new Settings();
         return instance;
     }
-    /** clears the <code>LinkedHashSet<E></code> field players,
+    /** clears the <code>LinkedHashSet</code> field players,
      * the list will be empty
      */ 
     public void deletePlayers(){
@@ -80,16 +80,16 @@ public class Settings implements Serializable{
         else throw new SettingsException("Players must be valid LinkedHashSet "
                 + "of one or more players");
     }
-    /** returns the <code>LinkedHashSet<E></code> with players
+    /** returns the <code>LinkedHashSet</code> with players
      * 
-     * @return <code>LinkedHashSet<E></code> players field
+     * @return <code>LinkedHashSet</code> players field
      */
     public static Set<Player> getPlayers(){
         return players;
     }
     /** registers symbols for game instance
      * 
-     * @param a must be an <code>LinkedHashSet<E></code> 
+     * @param a must be an <code>LinkedHashSet</code> 
      * with 3 elements/symbols
      * @throws SettingsException
      */
@@ -101,16 +101,16 @@ public class Settings implements Serializable{
         }
         else throw new SettingsException("Shapes must be 3 unique types");
     }
-    /** returns the <code>LinkedHashSet<E></code> with symbols for game instance
+    /** returns the <code>LinkedHashSet</code> with symbols for game instance
      * 
-     * @return <code>LinkedHashSet<E></code> symbols field
+     * @return <code>LinkedHashSet</code> symbols field
      */
     public static Set<Symbol> getSymbols(){
         return symbols;
     }
     /** registers colors for game instance
      * 
-     * @param c must be an <code>LinkedHashSet<E></code> 
+     * @param c must be an <code>LinkedHashSet</code> 
      * with 3 elements/colors
      * @throws SettingsException
      */
@@ -122,9 +122,9 @@ public class Settings implements Serializable{
         }
         else throw new SettingsException("Colors must be 3 unique Color types");
     }
-    /** returns the <code>LinkedHashSet<E></code> with colors
+    /** returns the <code>LinkedHashSet</code> with colors
      * 
-     * @return <code>LinkedHashSet<E></code> colors field
+     * @return <code>LinkedHashSet</code> colors field
      */
     public static Set<Color> getColors(){
         return colors;
