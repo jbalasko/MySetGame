@@ -52,10 +52,12 @@ public class Game implements Serializable{
      */
     private void createDefaultDeck(){
         if (!cardDeck.isEmpty()) cardDeck.clear();
-        for (int s=0; s<3; s++){
-            for (int n=0; n<3; n++){
-                for (int c=0; c<3; c++){
-                    for (int f=0;f<3;f++) cardDeck.add(new SetCard(s,n,c,f));
+        for (int sym=0; sym<3; sym++){
+            for (int num=0; num<3; num++){
+                for (int col=0; col<3; col++){
+                    for (int sha=0;sha<3;sha++){
+                        cardDeck.add(new SetCard(sym,num,col,sha));
+                    }
                 }
             }
         }
@@ -64,7 +66,16 @@ public class Game implements Serializable{
      * 
      */
     private void createSingleColorDeck(){
-        
+        if (!cardDeck.isEmpty()) cardDeck.clear();
+        for (int sym=0; sym<3; sym++){
+            for (int num=0; num<3; num++){
+                for (int col=0; col<3; col++){
+                    for (int sha=0;sha<3;sha++){
+                        cardDeck.add(new SetCard(sym,num,sha));
+                    }
+                }
+            }
+        }
     }
     public int getPlayerCount(){
         return players.size();
