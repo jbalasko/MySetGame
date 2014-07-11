@@ -28,16 +28,22 @@ public class Game implements Serializable{
     private ArrayList<SetCard> cardSet;
     
     /** creates the first and only instance of <code>Game</code>
+     * and initialize all fields
      * 
      */
     protected Game(){
         settings = Settings.getSettings();
+        //get players
         players = Settings.getPlayers();
+        //initialize cardDeck
         cardDeck = new ArrayList<>();
         if (Settings.getSingleColor() == null) createDefaultDeck();
         else createSingleColorDeck();
-        
-        //todo initiate other fields
+        //initialize cardTable
+        cardTable = new ArrayList<>();
+        shuffle(cardDeck);
+        for(int i=0; i<12; i++) dealCard();
+        //now should follow setCheck / update  
     }
     /** returns this instance of <code>Game</code>
      * 
@@ -76,6 +82,23 @@ public class Game implements Serializable{
                 }
             }
         }
+    }
+    private void shuffle(ArrayList<SetCard> cardDeck){
+        //todo 
+    }
+    /** deals a new <code>SetCard</code> from cardDeck into cardTable
+     * 
+     */
+    public void dealCard(){
+       //todo 
+    }
+    /** deals a new <code>SetCard</code> from cardDeck into position 
+     * at position index in cardTable
+     * 
+     * @param index specifies position in ArrayList cardDeck
+     */
+    public void dealCard(int index){
+        //todo
     }
     public int getPlayerCount(){
         return players.size();
