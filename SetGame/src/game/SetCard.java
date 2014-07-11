@@ -26,7 +26,7 @@ public class SetCard implements Serializable{
      * @param sym integer value 0 - 2 for symbol
      * @param num integer value 0 - 2 for number
      * @param col integer value 0 - 2 for color
-     * @param sha integer value 0 - 2 for fill
+     * @param sha integer value 0 - 2 for shading
      */
     public SetCard(int sym, int num, int col, int sha){
         symbol = sym;
@@ -44,7 +44,7 @@ public class SetCard implements Serializable{
      * <b>
      * @param sym integer value 0 - 2 for symbol
      * @param num integer value 0 - 2 for number
-     * @param sha integer value 0 - 2 for fill
+     * @param sha integer value 0 - 2 for shading
      */
     public SetCard(int sym, int num, int sha){
         this(sym,num,0,sha);
