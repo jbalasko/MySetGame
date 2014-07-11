@@ -87,6 +87,13 @@ public class Settings implements Serializable{
     public static Set<Player> getPlayers(){
         return players;
     }
+    /** returns how many players are registered
+     * 
+     * @return integer players count
+     */
+    public static int getPlayersCount(){
+        return players.size();
+    }
     /** registers symbols for game instance
      * 
      * @param a must be an <code>LinkedHashSet</code> 
