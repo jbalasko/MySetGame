@@ -4,10 +4,21 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/CardColor.java</file>
-            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/gui/Gui.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/symbols/TwoDimensional.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/game/Settings.java</file>
             <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/CardStack.java</file>
-            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/Card.java</file>
             <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/functional/CardFactory.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/game/Game.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/exceptions/SettingsException.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/gui/Gui.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/symbols/Heart.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/symbols/Hexagon.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/symbols/Rectangle.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/gui/GuiMakeMethods.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/model/Card.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/game/Player.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/symbols/Symbol.java</file>
+            <file>file:/C:/Users/Dominik/Documents/GitHub/SetGame/SetGame/src/game/SetCard.java</file>
         </group>
     </open-files>
 </project-private>
