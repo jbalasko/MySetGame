@@ -15,7 +15,7 @@ import java.awt.Color;
 import exceptions.*;
 
 /** this Singleton implements settings for actual game instance with static
- fields players, symbols, colors, singleColor
+ * fields players, symbols, colors, singleColor
  *
  * @author Juraj
  */
