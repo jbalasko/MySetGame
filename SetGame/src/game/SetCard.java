@@ -22,7 +22,7 @@ public class SetCard implements Serializable{
     /** creates <code>SetCard</code> instance with given integer values,
      * which can be used as indexes in corresponding <code>LinkedHashSet</code>
      * fields in <code>Settings</code>
-     * <b>
+     * <br>
      * @param sym integer value 0 - 2 for symbol
      * @param num integer value 0 - 2 for number
      * @param col integer value 0 - 2 for color
@@ -41,7 +41,7 @@ public class SetCard implements Serializable{
      * The color is alway set 0.
      * All other logic should function unmodified,
      * use <code>Settings.singleColor</code> to check if single color mode is set
-     * <b>
+     * <br>
      * @param sym integer value 0 - 2 for symbol
      * @param num integer value 0 - 2 for number
      * @param sha integer value 0 - 2 for shading

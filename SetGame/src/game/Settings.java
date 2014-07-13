@@ -76,12 +76,12 @@ public class Settings implements Serializable{
         else throw new SettingsException("Players must be valid LinkedHashSet "
                 + "of one or more players");
     }
-    /** returns the <code>LinkedHashSet</code> with players
+    /** returns the <code>ArrayList</code> with players
      * 
-     * @return <code>LinkedHashSet</code> players field
+     * @return <code>ArrayList</code> players field
      */
-    public static Set<Player> getPlayers(){
-        return players;
+    public static List<Player> getPlayers(){
+        return new ArrayList<>(players);
     }
     /** returns how many players are registered
      * 

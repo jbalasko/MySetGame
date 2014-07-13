@@ -19,7 +19,7 @@ public class Game implements Serializable{
     private static Game instance = null;
     private static Settings settings;
     //array of players for this game
-    private final Set<Player> players;
+    private final List<Player> players;
     //deck of cards for this game
     private List<SetCard> cardDeck;
     //cards on the game table
@@ -86,7 +86,7 @@ public class Game implements Serializable{
     private void shuffle(List<?> cardDeck){
         //todo 
     }
-    /** deals a new <code>SetCard</code> from cardDeck into cardTable
+    /** deals a new <code>SetCard</code> from cardDeck into cardTable 
      * 
      */
     public void dealCard(){
@@ -102,6 +102,9 @@ public class Game implements Serializable{
     }
     public int getPlayerCount(){
         return players.size();
+    }
+    public String getPlayerName(int index){
+        return players.get(index).getName();
     }
     
 }
