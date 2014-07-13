@@ -27,7 +27,6 @@ public class Settings implements Serializable{
     private static Color singleColor;
     
     /** *  creates <code>Settings</code> instance with default values:
-     * <br>
      * players: Player 1, Player 2
      * symbols: Rectangle, Wave, Oval
      * colors: Red, Green, Blue
