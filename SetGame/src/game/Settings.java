@@ -5,10 +5,7 @@
  */
 
 package game;
-import symbols.Symbol;
-import symbols.Oval;
-import symbols.Rectangle;
-import symbols.Wave;
+import symbols.*;
 import java.util.*;
 import java.io.Serializable;
 import java.awt.Color;
